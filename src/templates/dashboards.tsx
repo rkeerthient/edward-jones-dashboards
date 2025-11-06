@@ -31,6 +31,7 @@ import ReviewsComponent from "../components/reviewsComponent/ReviewsComponent";
 import AnalyticsOverview from "../components/dashboard-components/static-components/Analytics";
 import { ScoutData } from "../components/dashboard-components/static-components/Scout";
 import Social from "../components/dashboard-components/static-components/Social";
+import CurveSvg from "../assets/svgs/curve.svg";
 
 export const config: TemplateConfig = {
   stream: {
@@ -193,30 +194,27 @@ const Dashboards: Template<TemplateRenderProps> = ({ document }) => {
     <div className="overflow-y-scroll">
       <PageLayout _site={document._site} templateData={document}>
         <section className="flex flex-col">
-          <section
-            className="flex"
-            style={{
-              background: backgroundColor,
-              color: "white",
-            }}
-          >
-            <div className="p-4 flex items-center justify-center space-x-6 w-full">
-              <div className="w-[10%]">
-                <Image
-                  image={document.headshot}
-                  className="w-1/2 h-auto !max-w-none"
+          <div className="relative bg-[#026183] overflow-hidden">
+            <div className="absolute bg-[#0076A0] h-[120%] w-[90%] -left-[25%] -top-[25%] rounded-br-full -rotate-12"></div>
+            <div className="relative text-white  px-12 ">
+              <div className="flex items-center justify-center space-x-6 w-full py-2">
+                <div className="w-[20%]">
+                  <Image
+                    image={document.headshot}
+                    className="w-1/2 h-auto !max-w-none"
+                  />
+                </div>
+                <Banner
+                  docId={document.uid}
+                  background={backgroundColor}
+                  entityId={entityId}
+                  name={document.name}
+                  description={richTextDescriptionV2}
                 />
+                <Approvals />
               </div>
-              <Banner
-                docId={document.uid}
-                background={backgroundColor}
-                entityId={entityId}
-                name={document.name}
-                description={richTextDescriptionV2}
-              />
-              <Approvals />
             </div>
-          </section>
+          </div>
 
           <div className="px-6 w-3/4">
             <div className="sm:hidden">
@@ -253,8 +251,8 @@ const Dashboards: Template<TemplateRenderProps> = ({ document }) => {
                     )}
                     style={{
                       borderColor:
-                        currentTab === tab ? "#1f66e0" : "transparent",
-                      color: currentTab === tab ? "#003da5" : undefined,
+                        currentTab === tab ? "#0076a0" : "transparent",
+                      color: currentTab === tab ? "#3b3d3f" : undefined,
                     }}
                   >
                     {tab}
@@ -274,7 +272,7 @@ const Dashboards: Template<TemplateRenderProps> = ({ document }) => {
                       as="div"
                       className="w-full px-4"
                       style={{
-                        background: backgroundColor,
+                        background: "#0076a0",
                         color: "white",
                       }}
                     >
@@ -313,7 +311,7 @@ const Dashboards: Template<TemplateRenderProps> = ({ document }) => {
                   </p>
                   <SampleChart
                     color={
-                      "radial-gradient(closest-side, rgb(31, 102, 224), rgb(0, 61, 165))"
+                      "red"
                     }
                     completionPercentage={completionPercentage}
                   />

@@ -116,7 +116,7 @@ const ReviewsComponent = ({
                     <a
                       target="_blank"
                       href={`https://sandbox.yext.com/s/3356618/reviews#p0=uep&p0=status&p0=response-status&p1=includes&p1=1%7C3&p1=1%7C3%7C2%7C4&p2=${uid}&p2=includes&p2=includes&p3=entities&p3=&p3=`}
-                      className="inline-flex w-fit mx-auto justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                      className="inline-flex w-fit mx-auto justify-center rounded-md bg-[#0076a0] px-3 py-2 text-sm font-semibold text-white shadow-sm hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
                     >
                       My Reviews
                     </a>
