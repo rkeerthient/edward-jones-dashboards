@@ -30,18 +30,15 @@ const Banner = ({
         <div className="bg-[#fad141] text-[#3b3d3f] px-4 py-2 rounded-md font-medium text-sm hover:opacity-90">
           <a
             target="_blank"
-            href="https://sandbox.yext.com/s/3356618/listings/all-listings#s0=0&l0=25&sortCol=default&sortDir=asc"
+            href="#"
+            // href="https://sandbox.yext.com/s/3356618/listings/all-listings#s0=0&l0=25&sortCol=default&sortDir=asc"
             type="button"
           >
             Listings Recommendations
           </a>
         </div>
         <div className="bg-[#3b3d3f] text-white px-4 py-2 rounded-md font-medium text-sm hover:opacity-90">
-          <a
-            target="_blank"
-            href={`https://www.yext.com/s/4484499/yextsites/160834/editor#pageSetId=agents-pages&locale=en&themeId=farmers-agents-pfm&entityId=${docId}&assignment=ENTITY`}
-            type="button"
-          >
+          <a target="_blank" href={`#`} type="button">
             Edit Page
           </a>
         </div>
