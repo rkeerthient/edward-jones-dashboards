@@ -198,7 +198,7 @@ const Dashboards: Template<TemplateRenderProps> = ({ document }) => {
             <div className="absolute bg-[#0076A0] h-[120%] w-[90%] -left-[25%] -top-[25%] rounded-br-full -rotate-12"></div>
             <div className="relative text-white  px-12 ">
               <div className="flex items-center justify-center space-x-6 w-full py-2">
-                <div className="w-[20%]">
+                <div className="w-[15%]">
                   <Image
                     image={document.headshot}
                     className="w-1/2 h-auto !max-w-none"
@@ -310,9 +310,7 @@ const Dashboards: Template<TemplateRenderProps> = ({ document }) => {
                     details to Complete your profile.
                   </p>
                   <SampleChart
-                    color={
-                      "red"
-                    }
+                    color={"red"}
                     completionPercentage={completionPercentage}
                   />
                 </div>
