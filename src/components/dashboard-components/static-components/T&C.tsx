@@ -89,7 +89,7 @@ const TandC = ({ data }: { data: any }) => {
             <div className="mt-5 sm:mt-6 w-full text-center">
               <button
                 style={{
-                  background: backgroundColor,
+                  background: "#0076a0",
                   color: "white",
                 }}
                 type="button"
