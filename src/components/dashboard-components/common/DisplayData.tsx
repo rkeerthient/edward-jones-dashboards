@@ -194,7 +194,7 @@ const DisplayData = ({ type, onEdit, fieldName }: DisplayDataProps) => {
       <div className={baseClass} onClick={onEdit}>
         {value?.url ? (
           <div className="w-[150px] h-[150px] border flex items-center justify-center hover:ring-1 ring-[#5A58F2] rounded-sm">
-            <Image image={value} />
+            <Image image={value} className="!aspect-square !object-contain" />
           </div>
         ) : value ? (
           <div className="w-[150px] h-[150px] border flex items-center justify-center hover:ring-1 ring-[#5A58F2] rounded-sm">
