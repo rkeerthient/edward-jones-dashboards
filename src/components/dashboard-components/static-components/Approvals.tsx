@@ -1,4 +1,4 @@
-const Approvals = () => {
+const Approvals = ({ id }: { id: string }) => {
   return (
     <div className="bg-white text-center text-gray-800 m-auto flex justify-center items-center w-2/5 py-8 mx-auto">
       <div className="flex flex-col gap-4 w-full px-4">
@@ -85,9 +85,12 @@ const Approvals = () => {
             </svg>
           </div>
         </div>
-        <div className="bg-gray-700 px-4 py-2 mx-auto rounded-md text-gray-50 text-sm   w-fit">
+        <a
+          href={`https://www.yext.com/s/4504393/suggestions/#p0=entities&p0=source&p0=status&p0=assignee&p1=includes&p1=includes&p1=includes&p1=includes&p2=${id}&p2=all_publishers%7Cuser%7Cyext%7Capp%7CcomputedValues%7ClistingsMismatch&p2=REQUESTED&p2=unassigned%7C16051493&p3=&p3=&p3=&p3=`}
+          className="bg-gray-700 px-4 py-2 mx-auto rounded-md text-gray-50 text-sm   w-fit"
+        >
           View All Approval Requests
-        </div>
+        </a>
       </div>
     </div>
   );

@@ -211,7 +211,7 @@ const Dashboards: Template<TemplateRenderProps> = ({ document }) => {
                   name={document.name}
                   description={richTextDescriptionV2}
                 />
-                <Approvals />
+                <Approvals id={document.uid} />
               </div>
             </div>
           </div>
