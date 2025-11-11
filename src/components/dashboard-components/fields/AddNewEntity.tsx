@@ -185,14 +185,14 @@ export default function AddNewEntity({
 
                   <div className="flex mt-6 gap-3 justify-end">
                     <div
-                      className="h-[30px] rounded-2xl border px-4 py-2 flex items-center justify-center bg-[#5A58F2] text-white cursor-pointer disabled:bg-[#dadce0] disabled:text-[#97999d] disabled:cursor-not-allowed"
+                      className="h-[30px] rounded-2xl border px-4 py-2 flex items-center justify-center bg-[#0176a0] text-white cursor-pointer disabled:bg-[#dadce0] disabled:text-[#97999d] disabled:cursor-not-allowed"
                       onClick={handleSave}
                     >
                       Continue
                     </div>
                     <button
                       onClick={handleCancel}
-                      className="h-[30px] text-[#5A58F2] px-4 py-2 flex items-center justify-center"
+                      className="h-[30px] text-[#0176a0] px-4 py-2 flex items-center justify-center"
                     >
                       Cancel
                     </button>

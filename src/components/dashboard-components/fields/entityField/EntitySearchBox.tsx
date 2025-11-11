@@ -124,7 +124,7 @@ const EntitySearchBox = ({
               <button
                 type="button"
                 onClick={handleAddNew}
-                className="text-xs text-[#5A58F2] hover:underline"
+                className="text-xs text-[#0176a0] hover:underline"
               >
                 + Add Entity
               </button>

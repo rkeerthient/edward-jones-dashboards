@@ -37,7 +37,7 @@ export const ScoutData = () => {
             <div className="line-clamp-3">{item.desc}</div>
             <a
               href={`${item.link}`}
-              className="text-[#5a58f2] hover:underline flex gap-2 items-center"
+              className="text-[#0176a0] hover:underline flex gap-2 items-center"
               target="_blank"
             >
               <p>Explore This Insight</p>
@@ -45,7 +45,7 @@ export const ScoutData = () => {
               <svg
                 viewBox="0, 0, 448, 512"
                 focusable="false"
-                className="h-5 w-5 text-[#5a58f2]"
+                className="h-5 w-5 text-[#0176a0]"
                 aria-hidden="true"
               >
                 <path

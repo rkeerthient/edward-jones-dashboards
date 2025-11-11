@@ -168,7 +168,7 @@ const StructuredListField = ({
       <button
         type="button"
         onClick={handleAdd}
-        className="text-left text-xs text-[#5A58F2] mt-2 hover:underline"
+        className="text-left text-xs text-[#0176a0] mt-2 hover:underline"
       >
         + Add an item
       </button>

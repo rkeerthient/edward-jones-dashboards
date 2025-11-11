@@ -53,7 +53,7 @@ const TextList = ({ fieldName }: CompProps) => {
       <button
         type="button"
         onClick={addItem}
-        className="text-left text-xs text-[#5A58F2] mt-1 mb-3 hover:underline"
+        className="text-left text-xs text-[#0176a0] mt-1 mb-3 hover:underline"
       >
         + Add an item
       </button>

@@ -132,7 +132,8 @@ const FieldGroups = ({ tasks, document }: TasksProp) => {
                       />
                     ) : fieldApiType?.type === "richTextV2" ? (
                       <LexicalRichTextEditor fieldName={item.field} />
-                    ) : fieldApiType?.type === "textarea" ? (
+                    ) : fieldApiType?.type === "textarea" ||
+                      item.field === "description" ? (
                       <TextAreaField fieldName={item.field} />
                     ) : fieldApiType?.type === "entityRelationship" ? (
                       <EntityField

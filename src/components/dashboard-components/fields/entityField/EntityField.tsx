@@ -90,7 +90,7 @@ const EntityField = ({ fieldName, type, id }: EntityFieldProps) => {
             setFetchedEntities([]);
             setHasFetched(false);
           }}
-          className="text-left text-xs text-[#5A58F2] mt-1 mb-3 hover:underline"
+          className="text-left text-xs text-[#0176a0] mt-1 mb-3 hover:underline"
         >
           + Add an item
         </button>

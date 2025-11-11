@@ -103,7 +103,7 @@ const PhotoFieldForBlog = ({ value, onChange }: PhotoFieldProps) => {
             </div>
           ) : (
             <span
-              className="text-xs text-[#5A58F2] hover:underline hover:cursor-pointer"
+              className="text-xs text-[#0176a0] hover:underline hover:cursor-pointer"
               onClick={handleEdit}
             >
               Select Photo
@@ -201,7 +201,7 @@ const PhotoFieldForBlog = ({ value, onChange }: PhotoFieldProps) => {
                           setFiles([]);
                           setOpen(false);
                         }}
-                        className="text-xs text-[#5A58F2] hover:underline"
+                        className="text-xs text-[#0176a0] hover:underline"
                       >
                         Cancel
                       </button>

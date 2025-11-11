@@ -46,6 +46,23 @@ const DisplayData = ({ type, onEdit, fieldName }: DisplayDataProps) => {
     isEmpty(value) ? "text-[#8896a1]" : ""
   } cursor-pointer`;
 
+  if (type === "image" || fieldName === "headshot") {
+    return (
+      <div className={baseClass} onClick={onEdit}>
+        {value?.url ? (
+          <div className="w-[150px] h-[150px] border flex items-center justify-center hover:ring-1 ring-[#0176a0] rounded-sm">
+            <Image image={value} className="!aspect-square !object-contain" />
+          </div>
+        ) : value ? (
+          <div className="w-[150px] h-[150px] border flex items-center justify-center hover:ring-1 ring-[#0176a0] rounded-sm">
+            <img src={value} className="!aspect-square !object-contain" />
+          </div>
+        ) : (
+          "Click to add"
+        )}
+      </div>
+    );
+  }
   if (type === "text" || fieldName == "yearsOfExperience") {
     const enumMap = getEnumFromFieldName(fieldName);
     let displayValue = "Click to add";
@@ -163,7 +180,7 @@ const DisplayData = ({ type, onEdit, fieldName }: DisplayDataProps) => {
               key={idx}
               className="border p-5 flex flex-col rounded-md mb-3.5 mr-2.5"
             >
-              <p className="text-[#5A58F2] mb-0.5 text-sm">{item.name}</p>
+              <p className="text-[#0176a0] mb-0.5 text-sm">{item.name}</p>
               <div className="flex">
                 <p className="font-bold w-24">Entity Id</p>
                 <p>{item.id}</p>
@@ -185,24 +202,6 @@ const DisplayData = ({ type, onEdit, fieldName }: DisplayDataProps) => {
     return (
       <div className={baseClass} onClick={onEdit}>
         <Hours hours={value} />
-      </div>
-    );
-  }
-
-  if (type === "image") {
-    return (
-      <div className={baseClass} onClick={onEdit}>
-        {value?.url ? (
-          <div className="w-[150px] h-[150px] border flex items-center justify-center hover:ring-1 ring-[#5A58F2] rounded-sm">
-            <Image image={value} className="!aspect-square !object-contain" />
-          </div>
-        ) : value ? (
-          <div className="w-[150px] h-[150px] border flex items-center justify-center hover:ring-1 ring-[#5A58F2] rounded-sm">
-            <img src={value} />
-          </div>
-        ) : (
-          "Click to add"
-        )}
       </div>
     );
   }

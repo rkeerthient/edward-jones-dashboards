@@ -38,7 +38,9 @@ const Buttons = ({ fieldName }: CompProps) => {
           fieldName === "c_professionalBlogs" ||
           fieldName === "c_professionalEvents"
             ? newValue.map((item: any) => item.id)
-            : newValue,
+            : fieldName === "headshot"
+              ? { url: newValue }
+              : newValue,
       });
 
       const response = await fetch(
@@ -81,7 +83,7 @@ const Buttons = ({ fieldName }: CompProps) => {
       </button>
       <button
         style={{
-          color: typeof backgroundColor === "string" ? "#0076a0" : "#5A58F2",
+          color: typeof backgroundColor === "string" ? "#0076a0" : "#0176a0",
         }}
         className="h-[30px] px-4 py-2 flex items-center justify-center"
         onClick={handleCancel}

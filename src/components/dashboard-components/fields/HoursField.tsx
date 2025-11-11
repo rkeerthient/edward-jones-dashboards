@@ -294,7 +294,7 @@ const HoursField: React.FC<HoursFieldProps> = ({ fieldName }) => {
                 ))}
                 <button
                   onClick={() => handleSplitAdd(day)}
-                  className="text-[#5a58f2] ml-auto mr-8 mb-4"
+                  className="text-[#0176a0] ml-auto mr-8 mb-4"
                 >
                   + Add an item
                 </button>
