@@ -3,7 +3,20 @@ import SoutImage from "../../../assets/images/scout.png";
 export const ScoutData = () => {
   return (
     <div className="flex gap-4 w-full  p-8 flex-col">
-      <img src="https://i.ibb.co/gLJshrSK/scout.png" alt="" />
+      <div className="flex flex-col gap-2">
+        <img
+          src="https://i.ibb.co/k212gGd1/Screenshot-2025-12-12-at-12-23-54-PM.png"
+          alt=""
+        />
+        <img
+          src="https://i.ibb.co/dwt0byq0/Screenshot-2025-12-12-at-12-28-26-PM.png"
+          alt=""
+        />
+        <img
+          src="https://i.ibb.co/1YHrPczN/Screenshot-2025-12-12-at-12-29-03-PM.png"
+          alt=""
+        />
+      </div>
       <div className="flex gap-4 w-full border rounded-md p-8">
         {SCOUT_INSIGHTS.map((item) => (
           <div
