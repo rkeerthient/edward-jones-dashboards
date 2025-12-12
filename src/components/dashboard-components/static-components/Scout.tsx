@@ -9,10 +9,6 @@ export const ScoutData = () => {
           alt=""
         />
         <img
-          src="https://i.ibb.co/dwt0byq0/Screenshot-2025-12-12-at-12-28-26-PM.png"
-          alt=""
-        />
-        <img
           src="https://i.ibb.co/1YHrPczN/Screenshot-2025-12-12-at-12-29-03-PM.png"
           alt=""
         />
@@ -80,8 +76,7 @@ export const ScoutData = () => {
         </a>
       </div>
       <img
-        className="w-full border py-2 rounded-md"
-        src="https://i.ibb.co/zjRj9fF/Screenshot-2025-10-09-at-3-58-01-PM.png"
+        src="https://i.ibb.co/dwt0byq0/Screenshot-2025-12-12-at-12-28-26-PM.png"
         alt=""
       />
     </div>
